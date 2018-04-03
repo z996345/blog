@@ -18,7 +18,7 @@
 
   <!--Open Graph Title-->
   
-      <meta property="og:title" content="Hello World"/>
+      <meta property="og:title" content="專案到底該如何管控"/>
   
   <!--Open Graph Description-->
   
@@ -37,7 +37,7 @@
 
   <!-- Title -->
   
-  <title>Hello World - Michael Huang&#39;s Blog</title>
+  <title>專案到底該如何管控 - Michael Huang&#39;s Blog</title>
 
 
   <link rel="shortcut icon" href="https://hexo.io/icon/favicon-96x96.png">
@@ -117,29 +117,32 @@
         <!-- Title date & tags -->
         <div class="post-header">
           <h1 class="entry-title">
-            Hello World
+            專案到底該如何管控
             
           </h1>
           <p class="posted-on">
-          2018-03-26
+          2018-04-03
           </p>
           <div class="tags-links">
             
+              
+                <a href="/blog/tags/git/" rel="tag">
+                  git
+                </a>
               
             
           </div>
         </div>
         <!-- Post Main Content -->
         <div class="entry-content">
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+          <h1 id="專案到底該如何管控"><a href="#專案到底該如何管控" class="headerlink" title="專案到底該如何管控"></a>專案到底該如何管控</h1><h2 id="關於自己使用Git進行專案管控的問題與想法"><a href="#關於自己使用Git進行專案管控的問題與想法" class="headerlink" title="關於自己使用Git進行專案管控的問題與想法"></a>關於自己使用Git進行專案管控的問題與想法</h2><p>先前跟朋友討論到該把整個專案的所有東西進行版控?還是只針對自家寫的程式碼進行管控?</p>
+<p>當下直覺反應是針對自家寫的程式碼進行管控就好，何必連外部套件一起管控？</p>
+<p>朋友就說了，硬碟空間又不貴，把所有用到的檔案全都進行管控又沒差，還可以避免因為外部套件發生狀況而引發的文提(如被移除或是改版…)。</p>
+<p>當下想想也是，可是又覺得很多此一舉，而且不符合版控的邏輯阿！但又覺得沒啥好反駁的點，如果要讓系統穩定的話要這樣搞也不是不行，雖然我傾向於透過package.json指定版號就好了。</p>
+<p>直到最近，在版控一個遊戲的檔案，想看看遊戲更新到底更新了什麼東西，所以對1.3G的資料進行版控(檔案數將近20萬)，這時候開啟Git工具就很慢了，雖然還是有其他的做法(像是M$的GVFS…殺雞用牛刀)，不過如果專案真的很龐大的話，尤其是使用node套件(深不可測的黑洞…)，或許為了加速Git的效率，還是分開管理會比較好。</p>
+<blockquote>
+<p>結論：分開管理會比較好。</p>
+</blockquote>
 
         </div>
       </article>
@@ -155,8 +158,8 @@
     <script type="text/javascript">
     var disqus_config = function () {
           this.page.url = window.location.href;
-          this.page.identifier = 'post-hello-world';
-          this.page.title = 'Hello World';
+          this.page.identifier = 'post-git-manage-project';
+          this.page.title = '專案到底該如何管控';
       };
     </script>
     <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -170,9 +173,13 @@
     <div class="nav-links">
       
         <div class="nav-previous">
-          <a href="/blog/2018/03/27/My-new-post/" rel="prev"><span class="meta-arraw meta-arraw-left"></span> 上一頁</a>
+          <a href="/blog/2018/04/03/gitignore-on-binary-file/" rel="prev"><span class="meta-arraw meta-arraw-left"></span> 上一頁</a>
         </div>
       
+      
+        <div class="nav-next">
+          <a href="/blog/2018/03/27/my-first-post/" rel="prev">下一頁 <span class="meta-arraw meta-arraw-right"></span></a>
+        </div>
       
     </div>
 
@@ -186,7 +193,7 @@
   <div class="row inside-wrapper">
     <div class="col-1-3">
       <aside>
-        <h1 class="widget-title">关于本站</h1>
+        <h1 class="widget-title">關於本站</h1>
         <div class="custom-widget-content">
           
           Michael Huang's Blog
@@ -199,7 +206,7 @@
         <div class="widget-text">
           
             
-              <a href="https://github.com/GallenHu" class="icon icon-github" target="_blank">github</a>
+              <a href="https://github.com/z996345" class="icon icon-github" target="_blank">github</a>
             
           
         </div>
@@ -240,7 +247,7 @@
   var disqus_shortname = 'michaelhuangblog';
 
   
-  var disqus_url = 'http://yoursite.com/2018/03/26/hello-world/';
+  var disqus_url = 'http://yoursite.com/2018/04/03/git-manage-project/';
   
 
   (function(){
