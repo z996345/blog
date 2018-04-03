@@ -85,5 +85,15 @@ deploy:
 # disqus
 disqus_shortname: michaelhuangblog
 
+# google analytics(ga)
 google_analytics: UA-116421763-1
+
+##Daily Config##
+# social
+social:
+  github: https://github.com/z996345
+
+widget:
+  title: 關於本站
+  content: Michael Huang's Blog
 ##Ended
